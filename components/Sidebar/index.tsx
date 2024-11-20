@@ -64,13 +64,14 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
     >
       {/* <!-- SIDEBAR HEADER --> */}
       <div className="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5">
-        <Link href="/">
+        <Link href="/" className="flex items-center gap-2">
           <Image
-            width={176}
-            height={32}
-            src={"/images/logo/logo.svg"}
+            width={36}
+            height={22}
+            src={"/images/logo/pegasyncLogo.png"}
             alt="Logo"
           />
+        <span className=" text-4xl font-bold  text-white lg:block">HRMS</span>
         </Link>
 
         <button
@@ -99,7 +100,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
 
       <div className="no-scrollbar flex flex-col overflow-y-auto duration-300 ease-linear">
         {/* <!-- Sidebar Menu --> */}
-        <nav className="mt-5 py-4 px-4 lg:mt-9 lg:px-6">
+        <nav className="mt-5 py-2 px-4 lg:mt-1 lg:px-6">
           {/* <!-- Menu Group --> */}
           <div>
             <h3 className="mb-4 ml-4 text-sm font-semibold text-bodydark2">
